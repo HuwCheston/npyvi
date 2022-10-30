@@ -24,6 +24,12 @@ TODO
     >>> npvi([1, 2, 3], [3, 3, 6], [4, 6, 8])
     [53.333333333333336, 33.33333333333333, 34.285714285714285]
 
+## Tests
+
+From the root directory, run:
+
+    python -m unittest
+
 ## References
 - Grabe, E., & Low, E. L. (2002). Durational variability in speech and the rhythm class hypothesis. In C. Gussenhoven & 
 N. Warner (Eds.), Papers in laboratory psychology (pp. 515–546). Cambridge University Press.

@@ -21,3 +21,25 @@ class NpyviUnitTest(unittest.TestCase):
         expected = [53.3333, 33.3333, 34.2857, 27.2727]
         for a, e in zip(actual, expected):
             self.assertAlmostEqual(a, e, places=4)
+
+    def test_invalid_arguments(self):
+        """Test that we throw an error when both individual values and an array of values are provided as arguments"""
+        self.assertRaises(TypeError, npvi, 1, 2, 3, [3, 2, 1])
+
+    def test_no_arguments(self):
+        """Test that we receive a value of -0.0 if no arguments were passed"""
+        actual = npvi()
+        expected = -0.0
+        self.assertEqual(actual, expected)
+
+    def test_ignore_non_numeric_args(self):
+        """Test that we ignore non-numeric arguments when passed in an iterable"""
+        i_am_a_string = 'I am a string!'
+        and_i_am_a_function = lambda _: _
+        actual = npvi([1, i_am_a_string, 2, 3], [1, 2, and_i_am_a_function, 3])
+        expected = [53.333333333333336, 53.333333333333336]
+        self.assertEqual(actual, expected)
+
+    def test_divide_by_zero_error(self):
+        """Test that we raise a ZeroDivisionError when passing in at least two successive arguments that equal 0"""
+        self.assertRaises(ZeroDivisionError, npvi, 0, 0, 1, 2)
