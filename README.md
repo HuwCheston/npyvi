@@ -1,5 +1,4 @@
 # npyvi
-- - -
 > Python implementation of normalised pairwise variability index (nPVI), as defined in Grabe & Low (2002)
 
 The normalised pairwise variability index (nPVI) is a measure of the average variation of a set of durations, ordered by
@@ -11,11 +10,9 @@ researchers in the above fields. The implementation provided here is incredibly 
 installation of any additional packages beyond those within the standard Python 3+ library.
 
 ## Installation
-- - -
 TODO
 
 ## Usage
-- - -
 
     from npyvi import npvi
     
@@ -28,7 +25,6 @@ TODO
     [53.333333333333336, 33.33333333333333, 34.285714285714285]
 
 ## References
-- - -
 - Grabe, E., & Low, E. L. (2002). Durational variability in speech and the rhythm class hypothesis. In C. Gussenhoven & 
 N. Warner (Eds.), Papers in laboratory psychology (pp. 515–546). Cambridge University Press.
 - Livingstone, L. (2011). [Normalized Pairwise Variability Index](https://www.mathworks.com/matlabcentral/fileexchange/33098-normalized-pairwise-variability-index)
@@ -39,7 +35,6 @@ and Cognition and the 8th Triennial Conference of the European Society for the C
 (pp. 1001–1008).
 
 ## Meta
-- - -
 Huw Cheston – [@HuwCheston](https://twitter.com/huwcheston) – hwc31@cam.ac.uk
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
