@@ -1,7 +1,7 @@
 """
-nPyVI
+npyvi
 
-Calculates Normalised Pairwise Variability Index as defined in Grabe & Low (2002)
+Python implementation of normalised pairwise variability index (nPVI), as defined in Grabe & Low (2002)
 """
 
 __version__ = "0.1.0"

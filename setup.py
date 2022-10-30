@@ -4,12 +4,13 @@ setup(
     name='npyvi',
     version='0.1.0',
     url='https://github.com/huwcheston/npyvi',
-    description='Calculates normalised pairwise variability index (nPVI), as defined in Grabe & Low (2002)',
+    description='Python implementation of normalised pairwise variability index (nPVI), '
+                'as defined in Grabe & Low (2002)',
     long_description=open('README.txt').read(),
     author='Huw Cheston',
     author_email='hwc31@cam.ac.uk',
     license='MIT',
-    packages=['nPyVI'],
+    packages=['npyvi'],
     python_requires='>=3',
     
     classifiers=[
